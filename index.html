@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Form From Api</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="min.css">
+</head>
+
+<body>
+     <div class="container">
+        <h1>API Data Display</h1>
+        
+        <div style="margin: 20px 0;">
+            <button class="btn" id="showModalBtn">Show in Modal</button>
+            <button class="btn" id="loadCardsBtn">Load Cards</button>
+        </div>
+
+        <!-- Cards Container -->
+        <div class="cards-container" id="cardsContainer">
+            <!-- Cards will be added here -->
+        </div>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Data from API</h2>
+                <div id="modalContent">
+                    <div class="loading">Loading...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script async src="min.js"></script>
+    <!-- <script async src="solution.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+
+</html>
